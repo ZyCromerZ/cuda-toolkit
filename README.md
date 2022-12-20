@@ -8,7 +8,7 @@ This action installs the [NVIDIA® CUDA® Toolkit](https://developer.nvidia.com/
 
 **Optional** The CUDA version to install. View `src/link/windows-links.ts` and `src/link/linux-links.ts` for available versions.
 
-Default: `'11.8.0'`.
+Default: `'12.0.0'`.
 
 ### `sub-packages`
 
@@ -55,7 +55,7 @@ steps:
 - uses: ZyCromerZ/cuda-toolkit@master
   id: cuda-toolkit
   with:
-    cuda: '11.8.0'
+    cuda: '12.0.0'
 
 - run: echo "Installed cuda version is: ${{steps.cuda-toolkit.outputs.cuda}}"
 
